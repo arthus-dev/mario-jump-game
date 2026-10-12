@@ -13,7 +13,7 @@ O objetivo do jogo é ajudar o Mário a se desviar dos obstáculos (tubos) pondo
 - **JavaScript (Vanilla):** Manipulação de DOM, escutadores de eventos de teclado, lógica de pulo e detecção de colisão em tempo real via 'setInterval'
 
 - ## 🎮 Como Jogar
-- 
+
 1. Abra o projeto no navegador.
 2. Pressione a **Seta para Cima** ou a **Barra de Espaço** no teclado para fazer o Mário pular.
 3. Evite encostar nos tubos para não perder!
