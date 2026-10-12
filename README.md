@@ -2,8 +2,6 @@
 
 Um jogo interativo de corrida infinita inspirado no clássico Super Mario Bros, desenvolvido com HTML5, CSS3 e JavaScript puro.
 
-![Preview do Jogo](./Game.png)
-
 ## 🎮 Jogar Online
 
 Você pode jogar o jogo diretamente no seu navegador através do link:  
