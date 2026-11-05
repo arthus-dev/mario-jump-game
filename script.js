@@ -28,6 +28,19 @@ function jump() {
 
 }
 
+// Função para acionar o pulo
+function handleJump(event) {
+    // Se for evento de teclado, verificar se foi a seta para ccima ou espaço
+    if (event.type === 'keydown') {
+        if (event.key === 'ArrowUp' || event.key === '') {
+            jump();
+        }
+    } else {
+        // Se for toque na tela (mobile) ou clique com o mouse
+        jump();
+    }
+}
+
 // Loop para verificar se houve colisão a cada 10 milissegundos
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
@@ -58,6 +71,19 @@ const loop = setInterval(() => {
         clearInterval(loop);
     }
 }, 10);
+
+// Escuta o teclado (Computador)
+document.addEventListener('keydown', handleJump);
+
+// Escuta o toque na tela (Telemóvel / Celular)
+document.addEventListener('touchstart', (event) => {
+    // Evita comportamrntos padrão de toque duplo/zoom no navegador do celular
+    event.preventDefault();
+    jump();
+}, { passive: false });
+
+// Escuta o clique do mouse (Garante funcionsmento em dispositivo com tela toucht)
+document.addEventListener('click', jump);
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowUp' || event.key === ' ') {
