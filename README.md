@@ -42,4 +42,4 @@ O objetivo do jogo é ajudar o Mário a desviar-se dos obstáculos (tubos) pondo
 
 ## ✒️ Autor
 
-Desenvolvido por **Arthur Silva** - [arthus-dev](https://github.com/arthus-dev)
+Desenvolvido por **Arthur (arthus-dev)**.
